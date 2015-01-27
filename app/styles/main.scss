@@ -1,20 +1,9 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
 @import "_sasslightbox.scss";
 @import "_colors.scss";
-// endbower
-
-
-
-
-.browsehappy {
-  margin: 0.2em 0;
-  background: $color-celeste;
-  color: $color-black;
-  padding: 0.2em 0;
-}
-
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
@@ -73,9 +62,11 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-    background:
-      radial-gradient(ellipse at center 300px, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%),
-      url(../images/back.jpg) center top;
+    // This is an attempt at a dithered background
+    // background:
+    //   radial-gradient(ellipse at center 300px, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%),
+    //   url(../images/back.jpg) center top;
+    background: url(../images/back.jpg) center top;
     margin-top: -70px;
     padding-top: 250px;
     text-align: center;
@@ -93,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 4px;
     font-size: 5em;
     font-weight: bold;
-    // background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
     /* WebKit (Safari/Chrome) Only */
 
     -webkit-text-stroke: 1px black;
@@ -101,7 +92,6 @@ h1, h2, h3, h4, h5, h6 {
      and use this to set color instead
     -webkit-text-fill-color: white; */
 
-    color: white;
     text-shadow: 3px 3px 0 $color-black,
     /* Simulated effect for Firefox and Opera
        and nice enhancement for WebKit */
@@ -113,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 10px;
     padding-bottom: 20px;
     letter-spacing: 3px;
-    // background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
     font-size: 1.5em;
     -webkit-text-stroke: 1px black;
     /* If we weren't using text-shadow, we'd set a fallback color
